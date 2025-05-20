@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brutto-Netto-Rechner</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Brutto-Netto-Rechner 2025</h1>
+    <form id="salary-form">
+      <div class="form-group">
+        <label for="brutto">Bruttogehalt *</label>
+        <input type="number" id="brutto" name="brutto" required placeholder="z.B. 4000" />
+        <select id="period" name="period">
+          <option value="monthly">Monatlich</option>
+          <option value="yearly">Jährlich</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="steuerklasse">Steuerklasse *</label>
+        <select id="steuerklasse" name="steuerklasse" required>
+          <option value="1">I</option>
+          <option value="2">II</option>
+          <option value="3">III</option>
+          <option value="4">IV</option>
+          <option value="5">V</option>
+          <option value="6">VI</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kinder">Anzahl Kinder</label>
+        <input type="number" id="kinder" name="kinder" min="0" max="10" />
+      </div>
+
+      <div class="form-group">
+        <label for="kinderfreibetrag">Kinderfreibetrag</label>
+        <select id="kinderfreibetrag" name="kinderfreibetrag">
+          <option value="0">0</option>
+          <option value="0.5">0,5</option>
+          <option value="1">1</option>
+          <option value="1.5">1,5</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kirchensteuer">Kirchensteuerpflichtig?</label>
+        <select id="kirchensteuer" name="kirchensteuer">
+          <option value="nein">Nein</option>
+          <option value="ja">Ja</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bundesland">Bundesland *</label>
+        <select id="bundesland" name="bundesland" required>
+          <option value="">Bitte wählen</option>
+          <option value="BY">Bayern</option>
+          <option value="BW">Baden-Württemberg</option>
+          <option value="BE">Berlin</option>
+          <!-- Weitere Bundesländer hier -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="geburtsjahr">Geburtsjahr</label>
+        <input type="number" id="geburtsjahr" name="geburtsjahr" min="1900" max="2025" />
+      </div>
+
+      <div class="form-group">
+        <label for="krankenkasse">Krankenversicherung</label>
+        <select id="krankenkasse" name="krankenkasse">
+          <option value="gesetzlich">Gesetzlich</option>
+          <option value="privat">Privat</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kassensatz">Kassensatz (%)</label>
+        <input type="number" id="kassensatz" name="kassensatz" step="0.1" placeholder="z.B. 15.7" />
+      </div>
+
+      <button type="submit">Berechnen</button>
+    </form>
+  </main>
+</body>
+</html>

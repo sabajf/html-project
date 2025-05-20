@@ -1,0 +1,23 @@
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.usd {
+  color: gray;
+  font-size: 15px;
+}
+
+.increase {
+  color: green;
+  font-size: 15px;
+}
+
+.des {
+  color: gray;
+  font-size: 15px;
+}
+
+.decrease {
+  color: red;
+}

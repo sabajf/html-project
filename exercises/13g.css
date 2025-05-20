@@ -1,0 +1,73 @@
+    .div { 
+      font-family: Arial;
+    }
+
+    .tweet {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }  
+    .profile-pic-column {
+      margin-right: 10px;
+    }
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+
+    .tweet-column {
+      flex:1; 
+    }
+    .tweet-header {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5px;
+    }
+
+    .name {
+      
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .id {
+      
+      color: gray;
+    }
+    .tweet-content {
+      
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    .video-preview {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-color:gray ;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 15px;
+      overflow: hidden;
+
+    }
+    .thumbnail-column {
+      background-color: gray;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+    .video-info-column {
+      flex:1;
+    }
+    .website {
+      color: gray;   
+      margin-bottom: 5px;
+    }
+    .video-title {
+      line-height: 22px;
+
+    }
